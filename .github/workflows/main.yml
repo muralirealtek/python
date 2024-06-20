@@ -1,0 +1,11 @@
+name: python
+on: push
+
+jobs:
+  hello:
+    name: python test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: print
+      run: echo "hello Murali"
