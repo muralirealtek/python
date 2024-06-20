@@ -1,0 +1,19 @@
+name: python file
+on: push
+
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: clone repo
+          uses: actions/checkout@v4
+
+        steps:
+        - uses: actions/setup-python@v5
+          with:
+            python-version: '3.10' 
+        
+        steps:
+        - name: run python file
+          run: python hellow.py
